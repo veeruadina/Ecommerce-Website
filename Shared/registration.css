@@ -1,0 +1,137 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    color: whitesmoke;
+    font-family: cursive;
+} 
+.loginContainer{
+    background-color: rgb(120, 188, 187);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.formContainer{
+    width: 400px;
+    height: 60vh;
+    background-color: rgba(3, 128, 125, 0.114); 
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    border-style: groove;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.formContainer .heading{
+    text-align: center;
+    font-family: cursive;
+    font-size: 26px;
+}
+.formContainer .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.formContainer .content .user_nameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+.formContainer .content .passwordContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.formContainer .content label{
+    padding: 1px;
+    font-size: 13px;
+}
+.formContainer .content input{
+    padding: 3px;
+    background-color: transparent;
+    border: none ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px -1px rgb(255, 255, 255),
+                 -1px -1px 10px -1px rgb(255, 255, 255);
+    width: 250px;
+    height: 30px;
+}
+::placeholder{
+    color: whitesmoke;
+}
+
+input[type=text]:hover {
+    cursor: text;
+}
+input[type=password]:hover {
+    cursor: text;
+}
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px -1px yellow ,
+                 -1px -1px 10px -1px yellow;
+    
+    
+}
+input[type=password]:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px -1px yellow ,
+                 -1px -1px 10px -1px yellow;
+}
+select:hover{
+    cursor: pointer;
+}
+option:hover{
+    cursor: pointer;
+}
+
+.formContainer .btn .sign_up_btn{
+    background-color: red ;
+    padding: 3px;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+.formContainer .btn .sign_up_btn:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: red;
+}
+
+.formContainer .content .userType .selectContainer{
+    margin-left: 100px;
+    border: none;
+    background-color: transparent;
+     
+}
+.formContainer .content .userType .selectContainer:focus{
+    background-color:rgb(139, 139, 139);
+    color: whitesmoke;
+}
+.formContainer .content .userType .selectContainer:hover{
+    background-color: rgb(139, 139, 139);
+    color: whitesmoke;
+}
+
+.formContainer .toRegister{
+    position: relative;
+    width: 100%;
+    padding-left: 41%;
+    font-size: 13px;
+}
+.formContainer .toRegister a{
+    position: absolute;
+    padding-left: 13px;
+}
+.formContainer .toRegister a:hover{
+    color: red;
+    transform: scale(1.3);
+}

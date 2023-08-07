@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="loginContainer">
+        <form class="formContainer" action="registration.php" onsubmit="return validate()" method="post" >
+            <div class="heading">Sign Up</div>
+            <div class="content">
+                <div class="user_nameContainer">
+                    <label class="user_name">User Name :</label>
+                    <input required type="text" name="user_name" placeholder="user name" >
+                </div>
+                <div class="passwordContainer">
+                    <label class="password">Password :</label>
+                    <input id="ps1" type="password" name="password" minlength="6" placeholder="password" >
+                    <label class="password">Re-enter Password :</label>
+                    <input id="ps2" type="password" name="password" minlength="6" placeholder="re-enter password" >
+                </div>
+                <div class="userType">
+                    <label>User Type : </label>
+                    <select class="selectContainer" name="user_type">
+                        <option class="opt" value="customer">Customer</option>
+                        <option class="opt" value="admin">Admin</option>
+                        <option class="opt" value="vendor">vendor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="sign_up_btn">Sign Up</button>
+            </div>
+            <div class="toRegister">
+                Already have an account? <a href="login.html">Login here</a>
+            </div>
+
+        </form>
+    </div>
+    
+
+    <script>
+         
+        function validate(){
+            
+            ps1 = document.getElementById("ps1").value;
+            ps2 = document.getElementById("ps2").value;
+            if(ps1 === ps2){
+                return true;
+            }
+            else{
+                alert("password mismatched");
+                return false;
+
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
